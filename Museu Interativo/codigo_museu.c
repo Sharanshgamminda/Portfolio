@@ -34,7 +34,7 @@ int main(void)
         {
             if (quantiaIngressos <=0)
             {
-                printf("Opa, nossos ingressos esgotaram por hoje! Volte novamente amanhã!");
+                printf("\n-------------------\n!!! Opa, nossos ingressos esgotaram por hoje! Volte novamente amanhã !!!\n-------------------\n");
                 continua = 0;
             }
             else
@@ -42,7 +42,7 @@ int main(void)
                 int controleCompraIngresso = 1;
                 while (controleCompraIngresso == 1)
                 {
-                    printf("Qual seu tipo de ingresso?\n1 - Inteira \n2 - Meia entrada \n3 - Isenção de ingresso\n");
+                    printf("\nQual seu tipo de ingresso?\n1 - Inteira \n2 - Meia entrada \n3 - Isenção de ingresso\n");
                     scanf("%d", &tipoIngresso);
                     ingresso = 40;
 
@@ -78,7 +78,7 @@ int main(void)
 
                 }
                 quantiaIngressos -= 1;
-                printf("Qual sessão você gostaria de ver? \n1 - Santos Dumont \nSantos Dumont foi um mineiro, conhecido mundialmente por ser o inventor do avião \n2 - Olimpíadas 2024 \nAs Olimpíadas que irão ocorrer na França em 2024 \n3 - Semana da Arte Moderna \nA Semana de Arte Moderna foi um evento cultural e artístico inovador no Brasil\n4 - Titanic \nO Titanic foi uma maravilha da invenção para barcos da época de sua criação \n");
+                printf("\nQual sessão você gostaria de ver? \n1 - Santos Dumont \nSantos Dumont foi um mineiro, conhecido mundialmente por ser o inventor do avião \n2 - Olimpíadas 2024 \nAs Olimpíadas que irão ocorrer na França em 2024 \n3 - Semana da Arte Moderna \nA Semana de Arte Moderna foi um evento cultural e artístico inovador no Brasil\n4 - Titanic \nO Titanic foi uma maravilha da invenção para barcos da época de sua criação \n");
                 scanf("%d", &sessao);
 
                 switch (sessao)
@@ -167,7 +167,7 @@ int main(void)
                 int controleResposta = 0;
                 while(controleResposta == 0)
                 {
-                    printf("Gostaria de ver outra exposição?\n1 - sim\n2 - não\n");
+                    printf("\nGostaria de ver outra exposição?\n1 - sim\n2 - não\n");
                     scanf("%d", &controleResposta);
                     if (controleResposta == 1)
                     {
@@ -186,8 +186,8 @@ int main(void)
             }
 
         }
-        printf("Obrigado pela preferência! Seu total deu: %d reais, efetue o pagamento no guichê!\n", valorTotalIngresso);
-        printf("Gostaria de reiniciar a venda de ingressos? \n1 - Sim \n2 - Não \n");
+        printf("\nObrigado pela preferência! Seu total deu: %d reais, efetue o pagamento no guichê!\n", valorTotalIngresso);
+        printf("\nGostaria de reiniciar a venda de ingressos? \n1 - Sim \n2 - Não \n");
         scanf("%d", &programaRoda);
         system("cls");
     }
