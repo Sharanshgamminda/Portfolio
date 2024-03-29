@@ -85,7 +85,7 @@ int main(void)
                 {
                 case 1:
                 {
-                    printf("Você escolheu a exposição: 250 anos de Santos Dumont\n");
+                    printf("Você escolheu a exposição: 150 anos de Santos Dumont\n");
                     valorTotalIngresso = valorTotalIngresso + ingresso;
                     if (tipoIngresso == 1)
                     {

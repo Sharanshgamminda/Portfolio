@@ -186,7 +186,7 @@ int main(void)
             }
         }
         while (continua == 1);
-        printf("Gostaria de iniciar a exposição da semana de arte moderda? \n1 - Sim \n2 - Não \n");
+        printf("Gostaria de reinicializar a exposição da semana de arte moderna? \n1 - Sim \n2 - Não \n");
         scanf("%d", &programaRoda);
         system("cls");
     }
