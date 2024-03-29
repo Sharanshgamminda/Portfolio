@@ -11,7 +11,7 @@ int main (void)
     printf("Digite a quantidade de alunos: ");
     scanf("%d", &n);
 
-    printf("Você irá cadastrar %d alunos \n", n);
+    printf("VocÃª irÃ¡ cadastrar %d alunos \n", n);
 
     for(i=0; i<n; i++)
     {
@@ -23,12 +23,12 @@ int main (void)
             scanf("%f", &notasDisciplina[i][j]);
 
             soma += notasDisciplina[i][j];
-            printf("A soma até agora deu %f \n", soma);
+            printf("A soma atÃ© agora deu %f \n", soma);
 
             fflush(stdin);
         }
         media = soma/3;
-        printf("A média do aluno %d deu %f \n\n",i+1, media);
+        printf("A mÃ©dia do aluno %d deu %f \n\n",i+1, media);
         mediaAlunoN[i] = media;
         if(media >= 7)
         {
@@ -65,19 +65,19 @@ int main (void)
         }
         somaTotal += soma;
         media = soma/n;
-        printf("A média da disciplina %d deu %f \n", j+1, media);
+        printf("A mÃ©dia da disciplina %d deu %f \n", j+1, media);
     }
     printf("A soma total deu %f \n", somaTotal);
     media = somaTotal/(n*3);
-    printf("A média global é %f \n", media);
-    printf("A quantidade de alunos que foram aprovados é %d \n", alunosPassados);
+    printf("A mÃ©dia global Ã© %f \n", media);
+    printf("A quantidade de alunos que foram aprovados Ã© %d \n", alunosPassados);
 
     printf("\nEscolha um aluno: ");
     scanf("%d", &alunoN);
     if(alunoN <= n)
     {
-        printf("A média do aluno %d é %f", alunoN, mediaAlunoN[(alunoN-1)]);
+        printf("A mÃ©dia do aluno %d Ã© %f", alunoN, mediaAlunoN[(alunoN-1)]);
     } else {
-        printf("Escolha inválida");
+        printf("Escolha invÃ¡lida");
     }
 }
